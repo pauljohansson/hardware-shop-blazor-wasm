@@ -1,0 +1,6 @@
+#untrack .vs folder and bin, obj folders
+.vs/
+HardwareShop.Api/bin/
+HardwareShop.Api/obj/
+HardwareShop.Web/bin/
+HardwareShop.Web/obj/

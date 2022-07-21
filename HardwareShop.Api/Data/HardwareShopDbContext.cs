@@ -71,6 +71,7 @@ namespace HardwareShop.Api.Data
 				CategoryId = 1
 
 			});
+
 			//Motherboard Category
 			modelBuilder.Entity<Product>().HasData(new Product
 			{
@@ -137,6 +138,7 @@ namespace HardwareShop.Api.Data
 				Qty = 50,
 				CategoryId = 2
 			});
+
 			//RAM Category
 			modelBuilder.Entity<Product>().HasData(new Product
 			{
@@ -199,6 +201,7 @@ namespace HardwareShop.Api.Data
 				Qty = 50,
 				CategoryId = 3
 			});
+
 			//GPU Category
 			modelBuilder.Entity<Product>().HasData(new Product
 			{
@@ -261,6 +264,214 @@ namespace HardwareShop.Api.Data
 				CategoryId = 4
 			});
 
+			//PSU Category
+			modelBuilder.Entity<Product>().HasData(new Product
+			{
+				Id = 24,
+				Name = "Seasonic Focus GX 650W",
+				Description = "",
+				ImageURL = "/Images/PSU/gx-650w.jpg",
+				Price = 69,
+				Qty = 100,
+				CategoryId = 5
+			});
+			modelBuilder.Entity<Product>().HasData(new Product
+			{
+				Id = 25,
+				Name = "Seasonic Focus GX 750W",
+				Description = "",
+				ImageURL = "/Images/PSU/gx-750w.png",
+				Price = 99,
+				Qty = 100,
+				CategoryId = 5
+			});
+			modelBuilder.Entity<Product>().HasData(new Product
+			{
+				Id = 26,
+				Name = "Corsair RM850 850W Black (2021)",
+				Description = "",
+				ImageURL = "/Images/PSU/rm850-black-2021.png",
+				Price = 129,
+				Qty = 100,
+				CategoryId = 5
+			});
+			modelBuilder.Entity<Product>().HasData(new Product
+			{
+				Id = 27,
+				Name = "EVGA Supernova G3 650W",
+				Description = "",
+				ImageURL = "/Images/PSU/supernova-g3-650w.jpg",
+				Price = 139,
+				Qty = 100,
+				CategoryId = 5
+			});
+			modelBuilder.Entity<Product>().HasData(new Product
+			{
+				Id = 28,
+				Name = "Corsair RM1000X 1000W v3",
+				Description = "",
+				ImageURL = "/Images/PSU/rm1000x.jpg",
+				Price = 199,
+				Qty = 100,
+				CategoryId = 5
+			});
+
+			//Storage Category
+			modelBuilder.Entity<Product>().HasData(new Product
+			{
+				Id = 29,
+				Name = "Samsung 970 EVO Plus 2TB",
+				Description = "",
+				ImageURL = "/Images/Storage/970-evo-plus-2tb.png",
+				Price = 299,
+				Qty = 100,
+				CategoryId = 6
+			});
+			modelBuilder.Entity<Product>().HasData(new Product
+			{
+				Id = 30,
+				Name = "ADATA XPG SX8200 Pro 2TB",
+				Description = "",
+				ImageURL = "/Images/Storage/xpg-sx8200-pro-2tb.jpg",
+				Price = 299,
+				Qty = 100,
+				CategoryId = 6
+			});
+			modelBuilder.Entity<Product>().HasData(new Product
+			{
+				Id = 31,
+				Name = "Seagate Exos X16 16TB",
+				Description = "",
+				ImageURL = "/Images/Storage/exos-x16-16tb.jpg",
+				Price = 299,
+				Qty = 20,
+				CategoryId = 6
+			});
+			modelBuilder.Entity<Product>().HasData(new Product
+			{
+				Id = 32,
+				Name = "Samsung 870 EVO SATA SSD 1TB",
+				Description = "",
+				ImageURL = "/Images/Storage/870-evo-1tb.png",
+				Price = 149,
+				Qty = 100,
+				CategoryId = 6
+			});
+			modelBuilder.Entity<Product>().HasData(new Product
+			{
+				Id = 33,
+				Name = "Crucial MX500 1TB",
+				Description = "",
+				ImageURL = "/Images/Storage/mx500-1tb.jpg",
+				Price = 109,
+				Qty = 100,
+				CategoryId = 6
+			});
+
+			//Case Category
+			modelBuilder.Entity<Product>().HasData(new Product
+			{
+				Id = 34,
+				Name = "Cooler Master MasterCase H500 Iron Grey",
+				Description = "",
+				ImageURL = "/Images/Case/h500-iron-grey.png",
+				Price = 139,
+				Qty = 100,
+				CategoryId = 7
+			});
+			modelBuilder.Entity<Product>().HasData(new Product
+			{
+				Id = 35,
+				Name = "Fractal Design Define R6 Black",
+				Description = "",
+				ImageURL = "/Images/Case/define-r6-black.jpg",
+				Price = 219,
+				Qty = 100,
+				CategoryId = 7
+			});
+			modelBuilder.Entity<Product>().HasData(new Product
+			{
+				Id = 36,
+				Name = "Lian Li LANCOOL II Mesh C RGB Black",
+				Description = "",
+				ImageURL = "/Images/Case/lancool-ii-meshc-black.jpg",
+				Price = 119,
+				Qty = 100,
+				CategoryId = 7
+			});
+			modelBuilder.Entity<Product>().HasData(new Product
+			{
+				Id = 37,
+				Name = "Phanteks Eclipse P400A Black",
+				Description = "",
+				ImageURL = "/Images/Case/p400a-black.jpg",
+				Price = 109,
+				Qty = 100,
+				CategoryId = 7
+			});
+			modelBuilder.Entity<Product>().HasData(new Product
+			{
+				Id = 38,
+				Name = "Fractal Design Meshify 2 ",
+				Description = "",
+				ImageURL = "/Images/Case/meshify-2-solid-black.png",
+				Price = 219,
+				Qty = 100,
+				CategoryId = 7
+			});
+
+			//Cooling Category
+			modelBuilder.Entity<Product>().HasData(new Product
+			{
+				Id = 39,
+				Name = "Cooler Master Hyper 212 EVO V2",
+				Description = "",
+				ImageURL = "/Images/Cooling/hyper-212-evo-v2.jpg",
+				Price = 29,
+				Qty = 100,
+				CategoryId = 8
+			});
+			modelBuilder.Entity<Product>().HasData(new Product
+			{
+				Id = 40,
+				Name = "Scythe Fuma 2",
+				Description = "",
+				ImageURL = "/Images/Cooling/fuma2.jpg",
+				Price = 69,
+				Qty = 100,
+				CategoryId = 8
+			});
+			modelBuilder.Entity<Product>().HasData(new Product
+			{
+				Id = 41,
+				Name = "Noctua NH-D15 chromax Black",
+				Description = "",
+				ImageURL = "/Images/Cooling/nh-d15-chromax-black.jpg",
+				Price = 119,
+				Qty = 100,
+				CategoryId = 8
+			});
+			modelBuilder.Entity<Product>().HasData(new Product
+			{
+				Id = 42,
+				Name = "Arctic Liquid Freezer II 360",
+				Description = "",
+				ImageURL = "/Images/Cooling/liquid-freezer-ii-360.jpg",
+				Price = 129,
+				Qty = 100,
+				CategoryId = 8
+			});
+			modelBuilder.Entity<Product>().HasData(new Product
+			{
+				Id = 43,
+				Name = "Corsair iCUE H150i ELITE CAPELLIX",
+				Description = "",
+				ImageURL = "/Images/Cooling/icue-h150i-elite-capellix.png",
+				Price = 199,
+				Qty = 100,
+				CategoryId = 8
+			});
+
 			//Add users
 			modelBuilder.Entity<User>().HasData(new User
 			{
@@ -288,6 +499,7 @@ namespace HardwareShop.Api.Data
 				UserId = 2
 
 			});
+
 			//Add Product Categories
 			modelBuilder.Entity<ProductCategory>().HasData(new ProductCategory
 			{
@@ -308,6 +520,26 @@ namespace HardwareShop.Api.Data
 			{
 				Id = 4,
 				Name = "GPU"
+			});
+			modelBuilder.Entity<ProductCategory>().HasData(new ProductCategory
+			{
+				Id = 5,
+				Name = "PSU"
+			});
+			modelBuilder.Entity<ProductCategory>().HasData(new ProductCategory
+			{
+				Id = 6,
+				Name = "Storage"
+			});
+			modelBuilder.Entity<ProductCategory>().HasData(new ProductCategory
+			{
+				Id = 7,
+				Name = "Case"
+			});
+			modelBuilder.Entity<ProductCategory>().HasData(new ProductCategory
+			{
+				Id = 8,
+				Name = "Cooling"
 			});
 		}
     }

@@ -4,3 +4,6 @@ HardwareShop.Api/bin/
 HardwareShop.Api/obj/
 HardwareShop.Web/bin/
 HardwareShop.Web/obj/
+
+#untrack migrations folder, needs to be generated on the host computer
+HardwareShop.Api/Migrations/

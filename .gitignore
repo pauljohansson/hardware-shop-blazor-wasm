@@ -2,6 +2,8 @@
 .vs/
 HardwareShop.Api/bin/
 HardwareShop.Api/obj/
+HardwareShop.Models/bin/
+HardwareShop.Models/obj/
 HardwareShop.Web/bin/
 HardwareShop.Web/obj/
 

@@ -13,9 +13,11 @@ namespace HardwareShop.Api.Repositories
         {
             this.hardwareShopDbContext = hardwareShopDbContext;
         }
-        public Task<IEnumerable<ProductCategory>> GetCategories()
+        public async Task<IEnumerable<ProductCategory>> GetCategories()
         {
-            throw new NotImplementedException();
+            var categories = await this.hardwareShopDbContext.ProductCategories.ToListAsync();
+
+            return categories;
         }
 
         public Task<ProductCategory> GetCategory(int id)

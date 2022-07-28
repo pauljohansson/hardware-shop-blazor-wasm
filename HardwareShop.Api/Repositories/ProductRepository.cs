@@ -1,6 +1,7 @@
 ﻿using HardwareShop.Api.Data;
 using HardwareShop.Api.Entities;
 using HardwareShop.Api.Repositories.Contracts;
+using Microsoft.EntityFrameworkCore;
 
 namespace HardwareShop.Api.Repositories
 {
@@ -27,9 +28,11 @@ namespace HardwareShop.Api.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<Product>> GetItems()
+        public async Task<IEnumerable<Product>> GetItems()
         {
-            throw new NotImplementedException();
+            var products = await this.hardwareShopDbContext.Products.ToListAsync();
+
+            return products;
         }
     }
 }

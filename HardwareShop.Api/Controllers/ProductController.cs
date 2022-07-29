@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using HardwareShop.Api.Repositories.Contracts;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HardwareShop.Api.Controllers
@@ -7,5 +8,11 @@ namespace HardwareShop.Api.Controllers
     [ApiController]
     public class ProductController : ControllerBase
     {
+        private readonly IProductRepository productRepository;
+
+        public ProductController(IProductRepository productRepository)
+        {
+            this.productRepository = productRepository;
+        }
     }
 }

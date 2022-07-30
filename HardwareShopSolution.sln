@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HardwareShop.Web", "HardwareShop.Web\HardwareShop.Web.csproj", "{E43C0214-7E7E-4495-8D43-0546370F00A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HardwareShop.Web", "HardwareShop.Web\HardwareShop.Web.csproj", "{E43C0214-7E7E-4495-8D43-0546370F00A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HardwareShop.Api", "HardwareShop.Api\HardwareShop.Api.csproj", "{A4768082-9762-433C-B3D6-524F9D9A31E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HardwareShop.Api", "HardwareShop.Api\HardwareShop.Api.csproj", "{A4768082-9762-433C-B3D6-524F9D9A31E4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HardwareShop.Models", "HardwareShop.Models\HardwareShop.Models.csproj", "{1DB2154C-842B-4B76-8391-562776134907}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A4768082-9762-433C-B3D6-524F9D9A31E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4768082-9762-433C-B3D6-524F9D9A31E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4768082-9762-433C-B3D6-524F9D9A31E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DB2154C-842B-4B76-8391-562776134907}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DB2154C-842B-4B76-8391-562776134907}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DB2154C-842B-4B76-8391-562776134907}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DB2154C-842B-4B76-8391-562776134907}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

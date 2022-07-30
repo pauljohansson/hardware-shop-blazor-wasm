@@ -1,4 +1,6 @@
 using HardwareShop.Api.Data;
+using HardwareShop.Api.Repositories;
+using HardwareShop.Api.Repositories.Contracts;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +15,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContextPool<HardwareShopDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("HardwareShopConnection"))
 );
+
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 var app = builder.Build();
 

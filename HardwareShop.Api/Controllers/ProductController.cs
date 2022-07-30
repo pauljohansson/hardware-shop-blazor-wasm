@@ -1,4 +1,5 @@
-﻿using HardwareShop.Api.Repositories.Contracts;
+﻿using HardwareShop.Api.Extensions;
+using HardwareShop.Api.Repositories.Contracts;
 using HardwareShop.Models.Dtos;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -30,13 +31,15 @@ namespace HardwareShop.Api.Controllers
                 }
                 else
                 {
-                    
+                    var productDtos = products.ConvertToDto(productCategories);
+
+                    return Ok(productDtos);
                 }
             }
             catch (Exception)
             {
-
-                throw;
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                                "Error retrieving data from the database");
             }
         }
     }
